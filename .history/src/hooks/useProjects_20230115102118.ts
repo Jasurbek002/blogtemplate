@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { IProject } from "../types";
-// import { client } from "../utils/client";
+import { client } from "../utils/client";
 import groq from "groq";
 
 export const useProjects = (showMore: boolean) => {
@@ -12,9 +12,9 @@ export const useProjects = (showMore: boolean) => {
      ...
       } | order(_createdAt desc)`;
 
-    // client.fetch(query).then((data) => {
-    //   setProjects(data);
-    // });
+    client.fetch(query).then((data) => {
+      setProjects(data);
+    });
   }, []);
 
   const groupedProjects = showMore ? projects : projects.slice(0, 3);

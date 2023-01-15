@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useView } from "../hooks/useView";
-// import { urlFor } from "../utils/client";
+import { urlFor } from "../utils/client";
 import { IProject } from "../types";
 import { RiGithubLine, RiExternalLinkLine } from "../constants";
 import { projectVariant } from "../utils/motion";
@@ -21,7 +21,7 @@ export default function Project({ project }: Props) {
       className="project-block"
       variants={projectVariant}
     >
-      {/* <img src={urlFor(image).url()} className="project-thumb" alt={title} /> */}
+      <img src={urlFor(image).url()} className="project-thumb" alt={title} />
 
       <div className="project-content">
         <h4 className="text-center text-black text-lg sx:text-3xl sm:text-lg font-bold uppercase">
