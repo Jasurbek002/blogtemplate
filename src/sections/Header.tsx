@@ -10,7 +10,7 @@ export default function Header() {
   const { deviceSliced } = useMedia();
 
   return (
-    <header className="bg-main-black min-h-[700px] relative -z-20" id="home">
+    <header className="bg-main-black min-h-[700px] relative " id="home">
       <Container>
         <motion.div variants={headerVariant} className="top-wrapper">
           <a href="#home" className="text-main-red font-extrabold text-6xl">

@@ -53,7 +53,7 @@ export default function Projects() {
             title={'javascript, Next js, tailwind css, Node js, Express js, postgresql'}
             git1={'https://github.com/Jasurbek002/tdtu-dev'}
             git2={'https://github.com/Jasurbek002/tdtu.server.app'}
-            link={'https://tdtu-ilmiy-uz.vercel.app/'}
+            link={'https://www.science-tstu.uz/'}
           />
 
           {/* {projectss.map((project) => (
